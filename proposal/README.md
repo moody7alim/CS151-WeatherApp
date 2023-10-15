@@ -7,12 +7,12 @@
   - [Team Members working on the proposal](#team-members-working-on-the-proposal)
   - [State the problem/issue to resolve](#state-the-problemissue-to-resolve)
   - [Briefly survey previous works if any (include references)](#briefly-survey-previous-works-if-any-include-references)
-  - [Approach](#approach)
-  - [Assumptions] (#assumptions)
-  - [Operating Environments] (#operating-environments)
-  - [Intended Usage] (#intended-usage)
-  - [High-level Description of Solution] (#high-level-description-of-solution)
-  - [Functionality] (#functionality)
+  - [Approach](#approach) 
+  - [Assumptions](#assumptions)
+  - [Operating Environments](#operating-environments)
+  - [Intended Usage](#intended-usage)
+  - [High-level Description of Solution](#high-level-description-of-solution)
+  - [Functionality](#functionality)
   - [References](#references)
 
 <!-- /code_chunk_output -->
