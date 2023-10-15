@@ -36,6 +36,10 @@ Be mindful that we are using java. So we're probably gonna be doing spring boot 
 
 ## Team 10
 
+- Mohamed Halim (Group Leader)
+- Huu Hung Nguyen
+- Diego Quezada
+- Ngoc Ly Tran
 
 <!-- create a list of names -->
 ## Team Members working on the proposal
@@ -43,7 +47,6 @@ Be mindful that we are using java. So we're probably gonna be doing spring boot 
 - Mohamed Halim (Group Leader)
 - Huu Hung Nguyen
 - Diego Quezada
-- Ngoc Ly Tran
 
 ## State the problem/issue to resolve
 
