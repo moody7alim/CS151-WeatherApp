@@ -13,6 +13,7 @@
   - [Intended Usage](#intended-usage)
   - [High-level Description of Solution](#high-level-description-of-solution)
   - [Functionality](#functionality)
+  - [Operations](#operations)
   - [References](#references)
 
 <!-- /code_chunk_output -->
@@ -96,9 +97,26 @@ Be mindful that we are using java. So we're probably gonna be doing spring boot 
     - Communicate with the backend to fetch the requested data and display it to the user.
 
 
+## Operations
+
+- End-User:
+    - Open the JavaFX application.
+    - Input data if necessary (like location) to fetch the weather info.
+    - View the displayed weather information.
+
+- Admin User (if an admin panel or similar is implemented):
+    - Monitor the server health and status.
+    - Manage API keys or credentials for external weather API access.
+    - Update/Modify available locations or other configurable settings in the app.
+
+- Developer/Maintenance User:
+    - Deploy the Spring Boot application on a server.
+    - Ensure the continuous running of both the server and application, with possible logging and error tracking.
+    - Periodically update the application for security and functionality enhancements.
 
 
 ### References
 [AccuWeather](https://www.accuweather.com/)
 [Weather Underground](https://www.wunderground.com/)
 [The Weather Channel](https://weather.com/)
+[Baeldung."Building a RESTful Web Service with Spring Boot"](https://www.baeldung.com/spring-boot-start)
