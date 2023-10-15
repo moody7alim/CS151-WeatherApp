@@ -8,7 +8,7 @@
   - [State the problem/issue to resolve](#state-the-problemissue-to-resolve)
   - [Briefly survey previous works if any (include references)](#briefly-survey-previous-works-if-any-include-references)
   - [Approach](#approach)
-    - [References](#references)
+  - [References](#references)
 
 <!-- /code_chunk_output -->
 
