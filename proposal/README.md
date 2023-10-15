@@ -116,7 +116,7 @@ Be mindful that we are using java. So we're probably gonna be doing spring boot 
 
 
 ### References
-[AccuWeather](https://www.accuweather.com/)
-[Weather Underground](https://www.wunderground.com/)
-[The Weather Channel](https://weather.com/)
-[Baeldung."Building a RESTful Web Service with Spring Boot"](https://www.baeldung.com/spring-boot-start)
+- [AccuWeather](https://www.accuweather.com/)
+- [Weather Underground](https://www.wunderground.com/)
+- [The Weather Channel](https://weather.com/)
+- [Baeldung."Building a RESTful Web Service with Spring Boot"](https://www.baeldung.com/spring-boot-start)
