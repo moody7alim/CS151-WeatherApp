@@ -85,8 +85,8 @@ Be mindful that we are using java. So we're probably gonna be doing spring boot 
     - Expose endpoints to be consumed by the JavaFX application.
 
 - JavaFX Application:
--- Develop a user interface to display the weather information.
--- Implement functionalities to request data from the Spring Boot server.
+    - Develop a user interface to display the weather information.
+    - Implement functionalities to request data from the Spring Boot server.
 
 
 ## Functionality
