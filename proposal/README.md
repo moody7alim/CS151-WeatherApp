@@ -77,8 +77,8 @@ Be mindful that we are using java. So we're probably gonna be doing spring boot 
 ## High-level Description of Solution
 
 - Spring Boot Server:
--- Implement a REST API that communicates with an external weather API to retrieve weather data.
--- Expose endpoints to be consumed by the JavaFX application.
+    - Implement a REST API that communicates with an external weather API to retrieve weather data.
+    - Expose endpoints to be consumed by the JavaFX application.
 
 - JavaFX Application:
 -- Develop a user interface to display the weather information.
@@ -88,12 +88,12 @@ Be mindful that we are using java. So we're probably gonna be doing spring boot 
 ## Functionality
 
 - Backend (Spring Boot):
--- Communicate with an external weather API and fetch real-time data.
--- Parse and possibly store the fetched data, exposing relevant weather information through a REST endpoint.
+    - Communicate with an external weather API and fetch real-time data.
+    - Parse and possibly store the fetched data, exposing relevant weather information through a REST endpoint.
 
 - Frontend (JavaFX):
--- Present a user-friendly interface to allow users to request weather information.
--- Communicate with the backend to fetch the requested data and display it to the user.
+    - Present a user-friendly interface to allow users to request weather information.
+    - Communicate with the backend to fetch the requested data and display it to the user.
 
 
 
