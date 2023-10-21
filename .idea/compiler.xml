@@ -7,12 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Weather-App" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Spring-API" target="21" />
       <module name="UI" target="21" />
-      <module name="Weather-App" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
