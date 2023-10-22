@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="gitignore changes">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_20_2023_6_53_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_20_2023_6_53_PM_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_20_2023_6_53_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/WeatherController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/target/test-classes/com/example/springapi/SpringApiApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/target/classes/module-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proposal/README.md" afterDir="false" />
+    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="workspace.xml file edit">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/target/test-classes/com/example/springapi/SpringApiApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +24,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "moody7alim"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="ba31078a-06a0-4089-91d9-b230c35600a4" />
-        <option name="url" value="https://github.com/moody7alim/CS151-WeatherApp" />
-      </UrlAndAccount>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,13 +51,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging master",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "last_opened_file_path": "C:/Users/moody/Downloads/jar_files/json-20231013.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/moody/IdeaProjects/Weather-App/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -91,9 +68,22 @@
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.SpringApiApplication">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="HelloApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ui.HelloApplication" />
       <module name="UI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.ui.HelloApplication" />
+      <module name="Weather-App" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.ui.*" />
@@ -114,6 +104,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication (1)" />
+        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -127,16 +120,32 @@
       <option name="presentableId" value="Default" />
       <updated>1697848259522</updated>
       <workItem from="1697848260639" duration="3829000" />
-      <workItem from="1697854457489" duration="519000" />
+      <workItem from="1697959282964" duration="4178000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="gitignore changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore changes" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:org.openjfx:javafx-base" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
