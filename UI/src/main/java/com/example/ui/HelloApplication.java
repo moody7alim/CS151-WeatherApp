@@ -16,7 +16,7 @@ import java.net.URL;
 
 public class HelloApplication extends Application {
 
-    private final String API_KEY = "bed940713afbd5cdd6dc5b5763ce5392";
+    private final String API_KEY = "API_KEY_HERE";
     private final String API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
     private Label weatherLabel;
