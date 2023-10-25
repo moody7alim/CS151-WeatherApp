@@ -3,9 +3,14 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.ui.HelloController">
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
@@ -13,4 +18,77 @@
 
   <Label fx:id="welcomeText"/>
   <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+</VBox> -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="46.0" layoutY="12.0" text="San Jose">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="99.0" text="SUNDAY  7:00 AM">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="135.0" layoutX="78.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="97.0" layoutY="265.0" text="60°F">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <HBox layoutY="337.0" prefHeight="78.0" prefWidth="270.0" spacing="15.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="90.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/sunrise.png" />
+                           </image></ImageView>
+                        <Label alignment="TOP_LEFT" text="SUNRISE" />
+                        <Label text="7:22" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="37.0" prefWidth="90.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/wind.png" />
+                     </image></ImageView>
+                  <Label text="WIND" />
+                  <Label text="1 mph" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="37.0" prefWidth="90.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/humidity.png" />
+                     </image></ImageView>
+                  <Label text="HUMIDITY" />
+                  <Label text="73%" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/location.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="220.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/search.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
