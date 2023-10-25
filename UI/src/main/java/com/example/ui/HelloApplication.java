@@ -1,7 +1,9 @@
 package com.example.ui;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
@@ -9,15 +11,15 @@ import javafx.stage.Stage;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import org.json.JSONObject;
+
+import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HelloApplication extends Application {
-
-    private final String API_KEY = "API_KEY_HERE";
-    private final String API_URL = "https://api.openweathermap.org/data/2.5/weather";
+    private final String API_URL = "http://localhost:8080/weather";
 
     private Label weatherLabel;
 
@@ -26,7 +28,7 @@ public class HelloApplication extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Weather App");
 
         // Create UI components
@@ -36,7 +38,6 @@ public class HelloApplication extends Application {
         weatherLabel = new Label();
 
 
-        // what is Insets? it is a class that represents the four distances from the four sides of a rectangular area.
         // Create layout
         VBox layout = new VBox(10);
         layout.setPadding(new Insets(10));
@@ -89,7 +90,10 @@ public class HelloApplication extends Application {
     // Make HTTP request to fetch weather data
     private String getWeatherData(String location) {
         try {
-            URL url = new URL(API_URL + "?q=" + location + "&appid=" + API_KEY+'&'+"units=metric");
+
+            URL url = new URL(API_URL + "?location=" + location.replace(" ", "%20") + "&units=metric" + "&lang=ar");
+            System.out.println("URL: " + url.toString());
+
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 
@@ -104,7 +108,6 @@ public class HelloApplication extends Application {
             reader.close();
             connection.disconnect();
 
-            System.out.println(response.toString());
             JSONObject jsonObject = new JSONObject(response.toString());
             JSONObject main = jsonObject.getJSONObject("main");
             double temperature = main.getDouble("temp");
