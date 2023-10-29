@@ -7,9 +7,13 @@
 # UML diagrams
 
 ## Class diagram
-![Alt text](image.png)
+![Alt text](class-diagram.png)
+
 ## Use case diagram
+![Alt text](use-case-diagram.png)
 
 ## State diagram
+![Alt text](state-diagram.png)
 
 ## Sequence diagram
+![Alt text](sequence-diagram.png)
