@@ -7,7 +7,7 @@
 # UML diagrams
 
 ## Class diagram
-
+![Alt text](image.png)
 ## Use case diagram
 
 ## State diagram
