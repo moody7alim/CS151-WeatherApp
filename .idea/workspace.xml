@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="gitignore changes">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/configuration/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/SignupForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/ui/homepage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/ui/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/WeatherController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UI/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/module-info.class" afterDir="false" />
-    </list>
+    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="MongoDB added with updated to sprinapi" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,8 +127,17 @@
       <workItem from="1698447733266" duration="16000" />
       <workItem from="1699943354198" duration="10612000" />
       <workItem from="1700112978749" duration="14061000" />
-      <workItem from="1700155789054" duration="737000" />
+      <workItem from="1700155789054" duration="867000" />
     </task>
+    <task id="LOCAL-00001" summary="MongoDB added with updated to sprinapi">
+      <option name="closed" value="true" />
+      <created>1700159106429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700159106429</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +145,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gitignore changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore changes" />
+    <MESSAGE value="MongoDB added with updated to sprinapi" />
+    <option name="LAST_COMMIT_MESSAGE" value="MongoDB added with updated to sprinapi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
