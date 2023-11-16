@@ -41,12 +41,34 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>6.0.13</version>
+    </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20210307</version>
+    </dependency>
       <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-web</artifactId>
-          <version>6.0.13</version>
+          <groupId>org.kordamp.ikonli</groupId>
+          <artifactId>ikonli-javafx</artifactId>
+          <version>12.2.0</version> <!-- Use the latest version -->
       </dependency>
+      <dependency>
+          <groupId>org.kordamp.ikonli</groupId>
+          <artifactId>ikonli-fontawesome5-pack</artifactId>
+          <version>12.2.0</version> <!-- Use the latest version -->
+      </dependency>
+
+
+
+
   </dependencies>
+
+
+
 
   <build>
     <plugins>

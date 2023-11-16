@@ -5,6 +5,7 @@ module com.example.ui {
 
     requires org.kordamp.bootstrapfx.core;
     requires spring.web;
+    requires org.kordamp.ikonli.javafx;
 
     opens com.example.ui to javafx.fxml;
     exports com.example.ui;

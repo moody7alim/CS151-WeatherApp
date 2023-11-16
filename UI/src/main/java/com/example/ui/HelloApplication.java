@@ -87,8 +87,10 @@ public class HelloApplication extends Application {
     }
 
     private void continueAsGuest() {
-        // TODO: Implement continue as guest logic
+        ContinueAsGuestForm guestForm = new ContinueAsGuestForm();
+        guestForm.show();
     }
+
 
     // Service for fetching weather data
     private class WeatherService extends Service<String> {
