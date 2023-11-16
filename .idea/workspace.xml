@@ -4,34 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="/weather route updated">
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/cloud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/humidity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/location.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/mist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/rain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/snow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/sunrise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/images/wind.png" afterDir="false" />
+    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="gitignore changes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/LoginForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/SignupForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/ui/homepage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/ui/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/WeatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/controller/WeatherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/WeatherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/WeatherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/WeatherController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UI/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/main/resources/com/example/ui/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/resources/com/example/ui/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication$WeatherService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/com/example/ui/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/target/classes/com/example/ui/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/UI/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,16 +42,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="hung" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -87,16 +85,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "last_opened_file_path": "C:/Users/moody/Downloads/jar_files/json-20231013.jar",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,32 +109,16 @@
     "onboarding.tips.debug.path": "C:/Users/moody/IdeaProjects/Weather-App/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.17471264",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "8c48a105b6b97b267594a5c88242f324",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\moody\IdeaProjects\Weather-App\UI\src\main\java\com\example\ui" />
-    </key>
-  </component>
   <component name="RunManager" selected="Spring Boot.SpringApiApplication">
-    <configuration name="HelloApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.ui.HelloApplication" />
-      <module name="UI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ui.HelloApplication" />
-      <module name="Weather-App" />
+      <module name="UI" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.ui.*" />
@@ -150,7 +139,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication (1)" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -165,8 +153,10 @@
       <updated>1697848259522</updated>
       <workItem from="1697848260639" duration="3829000" />
       <workItem from="1697854457489" duration="519000" />
-      <workItem from="1698061722463" duration="1423000" />
-      <workItem from="1698168157243" duration="12689000" />
+      <workItem from="1698447733266" duration="16000" />
+      <workItem from="1699943354198" duration="10612000" />
+      <workItem from="1700112978749" duration="14061000" />
+      <workItem from="1700155789054" duration="737000" />
     </task>
     <servers />
   </component>
@@ -175,8 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gitignore changes" />
-    <MESSAGE value="/weather route updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="/weather route updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -186,14 +175,6 @@
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="javax.net.ssl.SSLException" package="javax.net.ssl" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
-          <option name="timeStamp" value="4" />
-        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

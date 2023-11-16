@@ -3,6 +3,7 @@ package com.example.ui;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -18,9 +19,11 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+
+
 public class HelloApplication extends Application {
     private final String API_URL = "http://localhost:8080/weather";
-
+    private Stage primaryStage;
     private Label weatherLabel;
 
     public static void main(String[] args) {
@@ -29,34 +32,62 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Weather App");
+        this.primaryStage = primaryStage;
+        primaryStage.setTitle("Weather App - Home");
 
-        // Create UI components
-        Label locationLabel = new Label("Enter City:");
-        TextField locationField = new TextField();
-        Button getWeatherButton = new Button("Get Weather");
-        weatherLabel = new Label();
+        Button loginButton = new Button("Login");
+        Button signUpButton = new Button("Sign Up");
+        Button guestButton = new Button("Continue as Guest");
 
+        loginButton.setOnAction(e -> showLoginForm());
+        signUpButton.setOnAction(e -> showSignUpForm());
+        guestButton.setOnAction(e -> continueAsGuest());
 
-        // Create layout
         VBox layout = new VBox(10);
-        layout.setPadding(new Insets(10));
-        layout.getChildren().addAll(locationLabel, locationField, getWeatherButton, weatherLabel);
+        layout.getChildren().addAll(loginButton, signUpButton, guestButton);
+        layout.setAlignment(Pos.CENTER);
 
-        // Handle button click
-        getWeatherButton.setOnAction(e -> {
-            String location = locationField.getText().trim();
-            if (!location.isEmpty()) {
-                // Fetch weather data on a background thread
-                WeatherService weatherService = new WeatherService(location);
-                weatherService.start();
-            }
-        });
-
-        // Create scene
         Scene scene = new Scene(layout, 300, 200);
+        scene.getStylesheets().add(getClass().getResource("homepage.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
+
+
+//        // Create UI components
+//        Label locationLabel = new Label("Enter City:");
+//        TextField locationField = new TextField();
+//        Button getWeatherButton = new Button("Get Weather");
+//        weatherLabel = new Label();
+//
+//
+//        // Create layout
+//        VBox layout = new VBox(10);
+//        layout.setPadding(new Insets(10));
+//        layout.getChildren().addAll(locationLabel, locationField, getWeatherButton, weatherLabel);
+//
+//        // Handle button click
+//        getWeatherButton.setOnAction(e -> {
+//            String location = locationField.getText().trim();
+//            if (!location.isEmpty()) {
+//                // Fetch weather data on a background thread
+//                WeatherService weatherService = new WeatherService(location);
+//                weatherService.start();
+//            }
+//        });
+    }
+
+    private void showLoginForm() {
+        LoginForm loginForm = new LoginForm();
+        loginForm.show();
+    }
+
+    private void showSignUpForm() {
+        SignupForm signupForm = new SignupForm();
+        signupForm.show();
+    }
+
+    private void continueAsGuest() {
+        // TODO: Implement continue as guest logic
     }
 
     // Service for fetching weather data

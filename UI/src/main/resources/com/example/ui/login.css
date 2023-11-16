@@ -1,0 +1,22 @@
+/* login-style.css */
+
+.login-form {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-padding: 20;
+}
+
+.login-form-field {
+    -fx-pref-width: 200;
+}
+
+.login-form-button {
+    -fx-background-color: #78909C;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+}
+
+.login-form-button:hover {
+    -fx-background-color: #546E7A;
+}
