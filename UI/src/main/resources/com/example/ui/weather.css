@@ -1,0 +1,108 @@
+.root {
+    -fx-background-color: #ffffff; /* A light grey background for better contrast with grey icons */
+}
+
+#cityLabel, #dateLabel, #temperatureLabel, #sunriseLabel, #windLabel, #humidityLabel {
+    -fx-text-fill: #333; /* Darker text color for better readability */
+}
+
+#weatherIcon {
+    /* Additional styling can go here if needed */
+}
+
+/* Styles for the details layout */
+.details-layout {
+    -fx-background-color: #fff; /* White background for the details section */
+    -fx-padding: 10px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+/* More styling rules as needed */
+
+#cityLabel {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#dateLabel {
+    font-size: 16px;
+    color: #666666;
+}
+
+#temperatureLabel {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#weatherIcon {
+    /* You may want to add some styling for the weather icon if necessary */
+}
+
+#sunriseLabel, #windLabel, #humidityLabel {
+    font-size: 16px;
+}
+
+.location-field {
+    -fx-border-color: #ccc; /* Gray border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 4px 8px; /* Adjust padding as necessary */
+    /* Additional styling for the text field */
+}
+
+.weather-button {
+    -fx-border-color: #ccc; /* Gray border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-background-color: white; /* Adjust background color as necessary */
+    -fx-padding: 4px 10px; /* Adjust padding as necessary */
+    /* Additional styling for the button */
+}
+
+/* Morning styles */
+.morning-sunny {
+    -fx-background-color: #FFE57F; /* Light yellow for a sunny morning */
+}
+
+.morning-cloudy {
+    -fx-background-color: #90A4AE; /* Grey for a cloudy morning */
+}
+
+/* Afternoon styles */
+.afternoon-sunny {
+    -fx-background-color: #FFD54F; /* Warm yellow for a sunny afternoon */
+}
+
+.afternoon-cloudy {
+    -fx-background-color: #B0BEC5; /* Light grey for a cloudy afternoon */
+}
+
+.afternoon-rainy {
+    -fx-background-color: #64B5F6; /* Blue for a rainy afternoon */
+}
+
+/* Evening styles */
+.evening-sunny {
+    -fx-background-color: #FFAB91; /* Soft orange for a sunny evening */
+}
+
+.evening-cloudy {
+    -fx-background-color: #78909C; /* Darker grey for a cloudy evening */
+}
+
+.evening-rainy {
+    -fx-background-color: #4FC3F7; /* Lighter blue for a rainy evening */
+}
+
+/* Night styles */
+.night-clear {
+    -fx-background-color: #0D47A1; /* Deep blue for a clear night */
+}
+
+.night-cloudy {
+    -fx-background-color: #37474F; /* Dark grey for a cloudy night */
+}
+
+.night-rainy {
+    -fx-background-color: #0277BD; /* Dark blue for a rainy night */
+}
+
