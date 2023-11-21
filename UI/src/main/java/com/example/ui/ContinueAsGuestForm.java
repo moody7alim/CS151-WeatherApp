@@ -177,9 +177,6 @@ public class ContinueAsGuestForm {
         String iconCode = weatherArray.getJSONObject(0).getString("icon");
         long sunriseTime = weatherData.getJSONObject("sys").getLong("sunrise") * 1000;
 
-        // Update the background based on the time and weather
-        updateBackgroundStyle(mainWeather);
-
         // Fetch timezone offset from the weather data
         long timezoneOffset = weatherData.getLong("timezone"); // Assuming it's in seconds
 
@@ -187,6 +184,9 @@ public class ContinueAsGuestForm {
         Instant now = Instant.now();
         ZoneOffset zoneOffset = ZoneOffset.ofTotalSeconds((int) timezoneOffset);
         LocalDateTime localDateTime = LocalDateTime.ofInstant(now, zoneOffset);
+
+        // Pass the localDateTime to the updateBackgroundStyle method
+        updateBackgroundStyle(mainWeather, localDateTime);
 
         // Format the current time
         SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, hh:mm a");
@@ -203,6 +203,9 @@ public class ContinueAsGuestForm {
         String iconUrl = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
         Image iconImage = new Image(iconUrl, true); // 'true' enables background loading
         weatherIcon.setImage(iconImage);
+        // make the weather icon bigger
+        weatherIcon.setFitHeight(200);
+        weatherIcon.setFitWidth(200);
 
         // Now that we have the data, we can set the icon literals
         sunriseIconView.setIconLiteral("fas-sun");
@@ -211,29 +214,49 @@ public class ContinueAsGuestForm {
 
         // Display the weather data
         cityLabel.setText(city);
+        cityLabel.setStyle("-fx-font-size: 30px; -fx-font-weight: bold;");
+
         dateLabel.setText(formattedDate);
+        dateLabel.setStyle("-fx-font-size: 20px;");
+
         temperatureLabel.setText(String.format("%.1f°C", temperature));
+        temperatureLabel.setStyle("-fx-font-size: 50px; -fx-font-weight: bold;");
+
         sunriseLabel.setText("  Sunrise\n" + formattedSunrise);
+        sunriseLabel.setStyle("-fx-font-size: 16px;");
+
         windLabel.setText("  Wind\n" + String.format("%.1f m/s", windSpeed));
+        windLabel.setStyle("-fx-font-size: 16px;");
+
         humidityLabel.setText("Humidity\n" + "    " + String.format("%d%%", humidity));
+        humidityLabel.setStyle("-fx-font-size: 16px;");
     }
 
-    private void updateBackgroundStyle(String weatherCondition) {
-        LocalTime currentTime = LocalTime.now();
+    private void updateBackgroundStyle(String weatherCondition, LocalDateTime localDateTime) {
         String backgroundStyle;
+        String textColor = "#FFFFFF"; // Default text color
 
-        if (currentTime.isBefore(LocalTime.NOON)) {
-            // Morning styles
+        // Determine the time of day based on localDateTime
+        if (localDateTime.getHour() < 12) {
             backgroundStyle = weatherCondition.equals("Sunny") ? "morning-sunny" : "morning-cloudy";
-        } else if (currentTime.isBefore(LocalTime.of(18, 0))) {
-            // Afternoon styles
+            textColor = weatherCondition.equals("Sunny") ? "#333333" : "#FFFFFF";
+        } else if (localDateTime.getHour() < 18) {
             backgroundStyle = weatherCondition.equals("Sunny") ? "afternoon-sunny" : "afternoon-cloudy";
+            textColor = weatherCondition.equals("Sunny") ? "#333333" : "#FFFFFF";
         } else {
-            // Evening/Night styles
             backgroundStyle = weatherCondition.equals("Clear") ? "night-clear" : "night-cloudy";
+            textColor = "#FFFFFF";
         }
 
         mainLayout.getStyleClass().clear();
         mainLayout.getStyleClass().add(backgroundStyle);
+
+        // Update text color of all labels
+        cityLabel.setStyle("-fx-text-fill: " + textColor + ";");
+        dateLabel.setStyle("-fx-text-fill: " + textColor + ";");
+        temperatureLabel.setStyle("-fx-text-fill: " + textColor + ";");
+        sunriseLabel.setStyle("-fx-text-fill: " + textColor + ";");
+        windLabel.setStyle("-fx-text-fill: " + textColor + ";");
+        humidityLabel.setStyle("-fx-text-fill: " + textColor + ";");
     }
 }
