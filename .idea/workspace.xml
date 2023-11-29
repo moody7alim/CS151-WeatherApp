@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="/weather route updated">
+    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="MongoDB added with updated to sprinapi">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/controller/WeatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/SignupForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/SignupForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,10 +47,17 @@
     &quot;assignee&quot;: &quot;moody7alim&quot;
   }
 }</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="dcbef9a1-5269-474a-b1dc-7be47d259537" />
+        <option name="accountId" value="ba31078a-06a0-4089-91d9-b230c35600a4" />
         <option name="url" value="https://github.com/moody7alim/CS151-WeatherApp" />
       </UrlAndAccount>
     </option>
@@ -56,44 +76,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;displayWeather&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/moody/Downloads/jar_files/json-20231013.jar&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/moody/IdeaProjects/Weather-App/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "JWT",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "C:/Users/moody/Downloads/jar_files/json-20231013.jar",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/moody/IdeaProjects/Weather-App/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.17471264",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "8c48a105b6b97b267594a5c88242f324",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\moody\IdeaProjects\Weather-App\UI\src\main\java\com\example\ui" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.HelloApplication (1)">
-    <configuration name="HelloApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.SpringApiApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ui.HelloApplication" />
       <module name="UI" />
       <extension name="coverage">
@@ -116,7 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication (1)" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -130,19 +146,21 @@
       <updated>1697848259522</updated>
       <workItem from="1697848260639" duration="3829000" />
       <workItem from="1697854457489" duration="519000" />
-      <workItem from="1698061722463" duration="1423000" />
-      <workItem from="1698168157243" duration="12689000" />
-      <workItem from="1700282101350" duration="5563000" />
-      <workItem from="1700382427366" duration="37000" />
-      <workItem from="1700382472263" duration="2037000" />
+      <workItem from="1698447733266" duration="16000" />
+      <workItem from="1699943354198" duration="10612000" />
+      <workItem from="1700112978749" duration="14061000" />
+      <workItem from="1700155789054" duration="867000" />
+      <workItem from="1700590470520" duration="14524000" />
+      <workItem from="1701070179365" duration="7159000" />
+      <workItem from="1701160853927" duration="13852000" />
     </task>
-    <task id="LOCAL-00001" summary="/weather route updated">
+    <task id="LOCAL-00001" summary="MongoDB added with updated to sprinapi">
       <option name="closed" value="true" />
-      <created>1700168218062</created>
+      <created>1700159106429</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1700168218062</updated>
+      <updated>1700159106429</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -150,33 +168,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gitignore changes" />
-    <MESSAGE value="/weather route updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="/weather route updated" />
+    <MESSAGE value="MongoDB added with updated to sprinapi" />
+    <option name="LAST_COMMIT_MESSAGE" value="MongoDB added with updated to sprinapi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -186,14 +181,6 @@
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="javax.net.ssl.SSLException" package="javax.net.ssl" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
-          <option name="timeStamp" value="4" />
-        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

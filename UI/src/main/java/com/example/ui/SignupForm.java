@@ -79,15 +79,18 @@ public class SignupForm {
                 os.write(input, 0, input.length);
             }
 
-            // Read the response
-            try (BufferedReader br = new BufferedReader(
-                    new InputStreamReader(connection.getInputStream(), "utf-8"))) {
-                StringBuilder response = new StringBuilder();
-                String responseLine;
-                while ((responseLine = br.readLine()) != null) {
-                    response.append(responseLine.trim());
-                }
-                System.out.println(response.toString());
+            int responseCode = connection.getResponseCode();
+
+            if (responseCode == HttpURLConnection.HTTP_CREATED) {
+                // Signup successful
+                showSignupSuccessMessage();
+            } else if (responseCode == HttpURLConnection.HTTP_CONFLICT) {
+                // Email is already registered
+                showSignupFailureMessage("Email is already registered.");
+            } else {
+                // Handle other error cases (show alert or log)
+                showSignupFailureMessage("Signup failed. Please try again later.");
+                throw new Exception("Signup failed with error code: " + responseCode);
             }
 
             connection.disconnect();
@@ -99,5 +102,24 @@ public class SignupForm {
 
         // Close the signup window after successful signup
         signupStage.close();
+    }
+
+    // Method to display a success message popup
+    private void showSignupSuccessMessage() {
+        showAlert(Alert.AlertType.INFORMATION, "Signup Successful", "You have successfully signed up!");
+    }
+
+    // Method to display a failure message popup
+    private void showSignupFailureMessage(String errorMessage) {
+        showAlert(Alert.AlertType.ERROR, "Signup Failed", errorMessage);
+    }
+
+    // Method to display an alert dialog
+    private void showAlert(Alert.AlertType alertType, String title, String message) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }
