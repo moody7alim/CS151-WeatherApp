@@ -67,16 +67,17 @@ public class ContinueAsGuestForm {
 
         cityLabel = new Label();
         cityLabel.setId("cityLabel");
+        cityLabel.getStyleClass().add("city-label");
 
         dateLabel = new Label();
         dateLabel.setId("dateLabel");
+        dateLabel.getStyleClass().add("date-label");
 
         temperatureLabel = new Label();
         temperatureLabel.setId("temperatureLabel");
+        temperatureLabel.getStyleClass().add("temperature-label");
 
         weatherIcon = new ImageView();
-        weatherIcon.setFitHeight(100); // Set the size as needed
-        weatherIcon.setFitWidth(100);
         weatherIcon.setId("weatherIcon");
 
         // Initialize labels with placeholders for icons, they will be invisible without an icon literal
@@ -103,6 +104,7 @@ public class ContinueAsGuestForm {
                 createVBox(windIconView, windText, windLabel),
                 createVBox(humidityIconView, humidityText, humidityLabel)
         );
+        detailsLayout.getStyleClass().add("details-layout");
         detailsLayout.setVisible(false); // Hide the layout until weather data is fetched
 
         // Inside your initialize method, after initializing other components
@@ -112,7 +114,7 @@ public class ContinueAsGuestForm {
         unitComboBox.setOnAction(e -> updateTemperatureUnit(unitComboBox.getValue()));
 
         ComboBox<String> languageComboBox = new ComboBox<>();
-        languageComboBox.getItems().addAll("English", "Russian", "French", "Japanese", "Korean", "Vietnamese"); // Add languages as needed
+        languageComboBox.getItems().addAll("English", "Spanish", "Russian", "French", "Japanese", "Korean", "Vietnamese"); // Add languages as needed
         languageComboBox.setValue("English"); // Set default language
         languageComboBox.setOnAction(e -> updateLanguage(languageComboBox.getValue()));
 
@@ -125,7 +127,7 @@ public class ContinueAsGuestForm {
         // Add all components to the main layout
         mainLayout.getChildren().addAll(locationInputLayout, cityLabel, dateLabel, weatherIcon, temperatureLabel, detailsLayout);
 
-        Scene scene = new Scene(mainLayout, 600, 500); // Adjust the size as needed
+        Scene scene = new Scene(mainLayout, 600, 700); // Adjust the size as needed
         scene.getStylesheets().add(getClass().getResource("/com/example/ui/weather.css").toExternalForm());
         guestStage.setScene(scene);
     }
@@ -151,8 +153,12 @@ public class ContinueAsGuestForm {
             connection.setRequestMethod("GET");
 
             int responseCode = connection.getResponseCode();
-            if(responseCode == 404) {
-                throw new Exception("wrong city name");
+            if (responseCode != HttpURLConnection.HTTP_OK) { // Check for successful response
+                if (responseCode != HttpURLConnection.HTTP_NOT_FOUND) {
+                    showAlert(Alert.AlertType.ERROR, "Error", "City not found",
+                            "Please check the city name and try again.");
+                }
+                return;
             }
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -171,6 +177,8 @@ public class ContinueAsGuestForm {
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Error: " + e.getMessage());
+            showAlert(Alert.AlertType.ERROR, "Error", "Exception Occurred",
+                    "An error occurred: " + e.getMessage());
         }
     }
 
@@ -265,7 +273,6 @@ public class ContinueAsGuestForm {
         temperatureLabel.setText(String.format("%.1f%s", temperature, isCelsius ? "°C" : "°F"));
     }
 
-
     /** Translate language */
     private void updateLanguage(String selectedLanguage) {
         language = selectedLanguage.substring(0, 2).toLowerCase();
@@ -301,10 +308,22 @@ public class ContinueAsGuestForm {
     private void updateLabelsForLanguage(String langTo) throws IOException {
         String langFrom = "en"; // Assuming English is the source language
 
-        // Translate labels
-        sunriseText = translate(langFrom, langTo, "sunrise");
-        windText = translate(langFrom, langTo, "wind");
-        humidityText = translate(langFrom, langTo, "humidity");
+        // Check if the target language is Spanish
+        if (langTo.equals("sp")) {
+            langTo = "es";
+        }
+
+        // Check if the target language is English
+        if (langTo.equals("en")) {
+            sunriseText = "sunrise";
+            windText = "wind";
+            humidityText = "humidity";
+        } else {
+            // Translate labels
+            sunriseText = translate(langFrom, langTo, "sunrise");
+            windText = translate(langFrom, langTo, "wind");
+            humidityText = translate(langFrom, langTo, "humidity");
+        }
 
         // Update label texts immediately
         ((Label) sunriseIconView.getParent().getChildrenUnmodifiable().get(1)).setText(sunriseText);
@@ -328,6 +347,7 @@ public class ContinueAsGuestForm {
 
     private Locale getLocaleFromLanguage(String language) {
         return switch (language) {
+            case "sp" -> new Locale("es", "ES");
             case "ru" -> new Locale("ru", "RU");
             case "fr" -> Locale.FRENCH;
             case "ja" -> Locale.JAPANESE;
@@ -348,5 +368,14 @@ public class ContinueAsGuestForm {
         String formattedDate = dateFormat.format(Date.from(localDateTime.atZone(zoneOffset).toInstant()));
 
         dateLabel.setText(formattedDate);
+    }
+
+    /** Show alert for errors */
+    private void showAlert(Alert.AlertType alertType, String title, String headerText, String contentText) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
+        alert.setHeaderText(headerText);
+        alert.setContentText(contentText);
+        alert.showAndWait();
     }
 }
