@@ -1,46 +1,20 @@
 .root {
-    -fx-background-color: #ffffff; /* A light grey background for better contrast with grey icons */
+    -fx-background-color: #FFFFFF; /* White background */
+    -fx-padding: 10px;
 }
 
-#cityLabel, #dateLabel, #temperatureLabel, #sunriseLabel, #windLabel, #humidityLabel {
-    -fx-text-fill: #333; /* Darker text color for better readability */
+.city-label, .temperature-label{
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
 }
 
-#weatherIcon {
-    /* Additional styling can go here if needed */
+.date-label {
+    -fx-font-size: 25px;
 }
 
 /* Styles for the details layout */
 .details-layout {
-    -fx-background-color: #fff; /* White background for the details section */
-    -fx-padding: 10px;
-    -fx-border-color: #ccc;
-    -fx-border-width: 1px;
-}
-
-/* More styling rules as needed */
-
-#cityLabel {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#dateLabel {
-    font-size: 16px;
-    color: #666666;
-}
-
-#temperatureLabel {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-#weatherIcon {
-    /* You may want to add some styling for the weather icon if necessary */
-}
-
-#sunriseLabel, #windLabel, #humidityLabel {
-    font-size: 16px;
+    -fx-font-size: 20px;
 }
 
 .location-field {
@@ -61,48 +35,58 @@
 /* Morning styles */
 .morning-sunny {
     -fx-background-color: #FFE57F; /* Light yellow for a sunny morning */
+    -fx-text-fill: #333333; /* Dark text for readability */
 }
 
 .morning-cloudy {
     -fx-background-color: #90A4AE; /* Grey for a cloudy morning */
+    -fx-text-fill: #FFFFFF; /* Light text for readability */
 }
 
 /* Afternoon styles */
 .afternoon-sunny {
     -fx-background-color: #FFD54F; /* Warm yellow for a sunny afternoon */
+    -fx-text-fill: #333333; /* Dark text for readability */
 }
 
 .afternoon-cloudy {
     -fx-background-color: #B0BEC5; /* Light grey for a cloudy afternoon */
+    -fx-text-fill: #FFFFFF; /* Light text for readability */
 }
 
 .afternoon-rainy {
     -fx-background-color: #64B5F6; /* Blue for a rainy afternoon */
+    -fx-text-fill: #FFFFFF; /* Light text for readability */
 }
 
 /* Evening styles */
 .evening-sunny {
     -fx-background-color: #FFAB91; /* Soft orange for a sunny evening */
+    -fx-text-fill: #ffffff; /* Dark text for readability */
 }
 
 .evening-cloudy {
     -fx-background-color: #78909C; /* Darker grey for a cloudy evening */
+    -fx-text-fill: #FFFFFF; /* Light text for readability */
 }
 
 .evening-rainy {
     -fx-background-color: #4FC3F7; /* Lighter blue for a rainy evening */
+    -fx-text-fill: #ffffff; /* Dark text for readability */
 }
 
 /* Night styles */
 .night-clear {
     -fx-background-color: #0D47A1; /* Deep blue for a clear night */
+    -fx-text-fill: #FFFFFF; /* Light text for readability */
 }
 
 .night-cloudy {
     -fx-background-color: #37474F; /* Dark grey for a cloudy night */
+    -fx-text-fill: #FFFFFF; /* Light text for readability */
 }
 
 .night-rainy {
     -fx-background-color: #0277BD; /* Dark blue for a rainy night */
+    -fx-text-fill: #FFFFFF; /* Light text for readability */
 }
-
