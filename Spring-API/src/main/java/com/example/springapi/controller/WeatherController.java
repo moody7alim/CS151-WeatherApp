@@ -1,21 +1,28 @@
 package com.example.springapi.controller;
 
 import com.example.springapi.model.User;
+import com.example.springapi.security.JwtUtil;
 import com.example.springapi.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.Map;
 
-@RestController
+@RestController(value = "/auth")
 public class WeatherController {
 
+//    private final AuthenticationManager authenticationManager;
+//
+//    private final JwtUtil jwtUtil;
     private final RestTemplate restTemplate;
+
 
     @Value("${openweathermap.api.key}")
     private String apiKey;
@@ -30,10 +37,18 @@ public class WeatherController {
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    public WeatherController(RestTemplate restTemplate, UserService userService, PasswordEncoder passwordEncoder) {
+    public WeatherController(RestTemplate restTemplate,
+                             UserService userService,
+                             PasswordEncoder passwordEncoder
+//                             ,AuthenticationManager authenticationManager,
+//                             JwtUtil jwtUtil
+    )
+    {
         this.restTemplate = restTemplate;
         this.userService = userService;
         this.passwordEncoder = passwordEncoder;
+//        this.authenticationManager = authenticationManager;
+//        this.jwtUtil = jwtUtil;
     }
 
     @GetMapping("/weather")
@@ -56,10 +71,16 @@ public class WeatherController {
         String password = loginRequest.get("password");
 
         // Retrieve the user by email from the database
-        User user = userService.findByUsername(email);
+        User user = userService.findByEmail(email);
+        if(user == null) {
+            // User with the email not found
+            System.out.println("User with the email not found");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Authentication failed");
+        }
 
-        if (user == null || !passwordEncoder.matches(password, user.getPassword())) {
+        if (!passwordEncoder.matches(password, user.getPassword())) {
             // Authentication failed
+            System.out.println("Authentication failed");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Authentication failed");
         }
 
@@ -67,6 +88,7 @@ public class WeatherController {
         // You can generate a JWT token here and send it back to the client
         // Or you can set up Spring Security to handle authentication and authorization
 
+        System.out.println("Authentication successful");
         return ResponseEntity.ok("Authentication successful");
     }
 
@@ -74,7 +96,7 @@ public class WeatherController {
     public ResponseEntity<User> signUp(@RequestBody User user) {
 
         // Check if the email already exists in the database
-        User existingUser = userService.findByUsername(user.getUsername());
+        User existingUser = userService.findByEmail(user.getEmail());
         if (existingUser != null) {
             // A user already exists with the email provided in the request
             return ResponseEntity.status(HttpStatus.CONFLICT).build();

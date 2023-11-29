@@ -20,6 +20,7 @@ public class LoginForm {
     private PasswordField passwordField;
 
     public LoginForm() {
+        restTemplate = new RestTemplate();
         initialize();
     }
 
@@ -27,6 +28,7 @@ public class LoginForm {
         loginStage = new Stage();
         loginStage.initModality(Modality.APPLICATION_MODAL);
         loginStage.setTitle("Login");
+
 
         Label emailLabel = new Label("Email:");
         emailField = new TextField();
