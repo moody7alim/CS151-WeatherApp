@@ -2,6 +2,7 @@ package com.example.springapi.configuration;
 
 import com.example.springapi.service.UserService;
 import com.example.springapi.security.JwtRequestFilter;
+import com.example.springapi.configuration.PasswordEncoderConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,10 +23,6 @@ public class SecurityConfig  {
         private final JwtRequestFilter jwtRequestFilter;
 
         private final UserService userDetailsService;
-        @Bean
-        public PasswordEncoder passwordEncoder() {
-                return new BCryptPasswordEncoder();
-        }
 
         public SecurityConfig(JwtRequestFilter jwtRequestFilter, UserService customUserDetailsService) {
                 this.jwtRequestFilter = jwtRequestFilter;

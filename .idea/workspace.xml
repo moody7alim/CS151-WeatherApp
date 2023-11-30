@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="JWT functionality added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/controller/WeatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/security/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/security/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/security/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +149,7 @@
       <workItem from="1700155789054" duration="867000" />
       <workItem from="1700590470520" duration="14524000" />
       <workItem from="1701070179365" duration="7159000" />
-      <workItem from="1701160853927" duration="13994000" />
+      <workItem from="1701160853927" duration="21933000" />
     </task>
     <task id="LOCAL-00001" summary="MongoDB added with updated to sprinapi">
       <option name="closed" value="true" />
@@ -158,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701254186312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="JWT functionality added">
+      <option name="closed" value="true" />
+      <created>1701254305058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701254305058</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
