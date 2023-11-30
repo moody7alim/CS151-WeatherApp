@@ -13,14 +13,16 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
+
+import java.util.HashMap;
 import java.util.Map;
 
-@RestController(value = "/auth")
+@RestController
 public class WeatherController {
 
-//    private final AuthenticationManager authenticationManager;
-//
-//    private final JwtUtil jwtUtil;
+    private final AuthenticationManager authenticationManager;
+
+    private final JwtUtil jwtUtil;
     private final RestTemplate restTemplate;
 
 
@@ -39,21 +41,22 @@ public class WeatherController {
     @Autowired
     public WeatherController(RestTemplate restTemplate,
                              UserService userService,
-                             PasswordEncoder passwordEncoder
-//                             ,AuthenticationManager authenticationManager,
-//                             JwtUtil jwtUtil
+                             PasswordEncoder passwordEncoder,
+                             AuthenticationManager authenticationManager,
+                             JwtUtil jwtUtil
     )
     {
         this.restTemplate = restTemplate;
         this.userService = userService;
         this.passwordEncoder = passwordEncoder;
-//        this.authenticationManager = authenticationManager;
-//        this.jwtUtil = jwtUtil;
+        this.authenticationManager = authenticationManager;
+        this.jwtUtil = jwtUtil;
     }
 
-    @GetMapping("/weather")
+    @GetMapping("/auth/weather")
     public ResponseEntity<String> weather(HttpServletRequest request) {
         Map<String, String[]> params = request.getParameterMap();
+        System.out.println("params : "+params);
         String location = params.get("location")[0];
         String units = params.get("units") != null ? params.get("units")[0] : "metric";
         String lang = params.get("lang") != null ? params.get("lang")[0] : "en";
@@ -65,7 +68,7 @@ public class WeatherController {
 
 
 
-    @PostMapping("/login")
+    @PostMapping("/auth/login")
     public ResponseEntity<String> login(@RequestBody Map<String, String> loginRequest) {
         String email = loginRequest.get("email");
         String password = loginRequest.get("password");
@@ -86,13 +89,19 @@ public class WeatherController {
 
         // Authentication successful
         // You can generate a JWT token here and send it back to the client
+        String token = jwtUtil.createToken(user);
         // Or you can set up Spring Security to handle authentication and authorization
 
         System.out.println("Authentication successful");
-        return ResponseEntity.ok("Authentication successful");
+        // create a response object that has both the token and the user
+         Map<String, Object> response = new HashMap<>();
+         response.put("token", token);
+         response.put("user", user.getEmail());
+         return ResponseEntity.ok(response.toString());
+
     }
 
-    @PostMapping("/signup")
+    @PostMapping("/auth/signup")
     public ResponseEntity<User> signUp(@RequestBody User user) {
 
         // Check if the email already exists in the database

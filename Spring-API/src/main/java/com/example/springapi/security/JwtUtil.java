@@ -2,11 +2,13 @@ package com.example.springapi.security;
 
 import com.example.springapi.model.User;
 import io.jsonwebtoken.*;
+import io.jsonwebtoken.security.Keys;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
 
+import javax.crypto.SecretKey;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -15,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 public class JwtUtil {
 
 
-    @Value("${jwt.secret}")
-    private String secret_key;
+
+    private SecretKey secret_key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
     @Value("${jwt.expiration}")
     private long accessTokenValidity;

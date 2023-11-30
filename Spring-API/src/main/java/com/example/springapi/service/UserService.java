@@ -1,6 +1,7 @@
 package com.example.springapi.service;
 
 import com.example.springapi.model.User;
+import com.example.springapi.configuration.PasswordEncoderConfig;
 import com.example.springapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
