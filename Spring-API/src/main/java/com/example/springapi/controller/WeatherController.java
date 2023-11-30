@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -69,7 +68,7 @@ public class WeatherController {
 
 
     @PostMapping("/auth/login")
-    public ResponseEntity<String> login(@RequestBody Map<String, String> loginRequest) {
+    public ResponseEntity<Object> login(@RequestBody Map<String, String> loginRequest) {
         String email = loginRequest.get("email");
         String password = loginRequest.get("password");
 
@@ -96,8 +95,8 @@ public class WeatherController {
         // create a response object that has both the token and the user
          Map<String, Object> response = new HashMap<>();
          response.put("token", token);
-         response.put("user", user.getEmail());
-         return ResponseEntity.ok(response.toString());
+         response.put("user", user);
+         return ResponseEntity.ok(response);
 
     }
 
@@ -114,6 +113,14 @@ public class WeatherController {
         // Create a new user record
         User savedUser = userService.saveUser(user);
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
+    }
+
+    @GetMapping("/testjwt")
+    public ResponseEntity<String> testJwt() {
+        // just a test endpoint to see if the JWT is working
+        return ResponseEntity.ok("JWT is working");
+
+
     }
 
 }

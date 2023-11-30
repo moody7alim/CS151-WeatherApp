@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="JWT functionality added">
+    <list default="true" id="085b5d0f-847b-4aa6-8e19-806115bd030f" name="Changes" comment="JWT functionality added to /auth route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/SpringApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/configuration/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/controller/WeatherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/security/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/security/JwtRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/security/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/java/com/example/springapi/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-API/target/classes/com/example/springapi/SpringApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/SignupForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/com/example/ui/SignupForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +100,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.SpringApiApplication">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ui.HelloApplication" />
       <module name="UI" />
@@ -149,7 +144,7 @@
       <workItem from="1700155789054" duration="867000" />
       <workItem from="1700590470520" duration="14524000" />
       <workItem from="1701070179365" duration="7159000" />
-      <workItem from="1701160853927" duration="21933000" />
+      <workItem from="1701160853927" duration="25139000" />
     </task>
     <task id="LOCAL-00001" summary="MongoDB added with updated to sprinapi">
       <option name="closed" value="true" />
@@ -175,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701254305058</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="JWT functionality added to /auth route">
+      <option name="closed" value="true" />
+      <created>1701340128688</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701340128688</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +188,8 @@
     <MESSAGE value="gitignore changes" />
     <MESSAGE value="MongoDB added with updated to sprinapi" />
     <MESSAGE value="JWT functionality added" />
-    <option name="LAST_COMMIT_MESSAGE" value="JWT functionality added" />
+    <MESSAGE value="JWT functionality added to /auth route" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT functionality added to /auth route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
