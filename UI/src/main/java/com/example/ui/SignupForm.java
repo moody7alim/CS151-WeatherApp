@@ -67,7 +67,7 @@ public class SignupForm {
             userJson.put("email", email);
 
             // Set up the HTTP request
-            URL url = new URL("http://localhost:8080/signup"); // Replace with your API URL
+            URL url = new URL("http://localhost:8080/auth/signup"); // Replace with your API URL
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setDoOutput(true);

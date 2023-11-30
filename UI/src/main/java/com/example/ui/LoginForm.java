@@ -66,7 +66,7 @@ public class LoginForm {
         loginRequest.put("password", password);
 
         // Send a login request to the Spring API
-        String loginUrl = "http://localhost:8080/login"; // Replace with your API URL
+        String loginUrl = "http://localhost:8080/auth/login"; // Replace with your API URL
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
@@ -78,7 +78,13 @@ public class LoginForm {
 
             if (response.getStatusCode() == HttpStatus.OK) {
                 // Authentication successful, close the login window or take further actions
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Login Successful");
+                alert.setHeaderText("Login Successful");
+                alert.setContentText("You have successfully logged in.");
+                alert.showAndWait();
                 loginStage.close();
+
             } else {
                 // Authentication failed, display an error message to the user
                 showError("Login failed. Please check your credentials.");
