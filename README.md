@@ -216,7 +216,17 @@ Second, run the JavaFX Frontend - HelloApplication.java
 
 - JavaFX Frontend
 <img width="1470" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/d05549fc-323f-4342-8db2-cf164bbc34d4">
+
+- Main screen
 <img width="303" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/b98f148b-9945-45b1-98db-7d73170c073f">
+
+- Login
+<img width="301" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/080dd058-70be-485d-9cd4-a1def9f13bdc">
+
+- Signup
+<img width="301" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/431fcf59-9d55-41d2-bf60-9244cca7514f">
+
+- Continue as Guest
 <img width="602" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/47775077-55aa-49b6-86eb-1c9a933c9ff8">
 
 
