@@ -182,27 +182,27 @@
 
 - Backend Development (Spring Boot)
 
-    - API Integration**: Integrated the backend with an external weather API (like OpenWeatherMap) to fetch real-time weather data. This involved setting up HTTP client services within Spring Boot to make API calls and retrieve data based on user requests.
+    - API Integration: Integrated the backend with an external weather API (like OpenWeatherMap) to fetch real-time weather data. This involved setting up HTTP client services within Spring Boot to make API calls and retrieve data based on user requests.
 
-    - Data Processing**: Implemented methods to parse the JSON response from the weather API, extracting key details such as temperature, humidity, wind speed, and sunrise time. This data processing ensured that only relevant information was sent to the front end.
+    - Data Processing: Implemented methods to parse the JSON response from the weather API, extracting key details such as temperature, humidity, wind speed, and sunrise time. This data processing ensured that only relevant information was sent to the front end.
 
-    - User Authentication**: Developed a secure user authentication system using Spring Security and JWT (JSON Web Tokens). This system allows users to register, log in, and maintain secure sessions.
+    - User Authentication: Developed a secure user authentication system using Spring Security and JWT (JSON Web Tokens). This system allows users to register, log in, and maintain secure sessions.
 
-    - REST API Creation**: Developed RESTful endpoints using Spring Boot, enabling the front to send requests (like city name for weather information) and receive formatted JSON responses.
+    - REST API Creation: Developed RESTful endpoints using Spring Boot, enabling the front to send requests (like city name for weather information) and receive formatted JSON responses.
 
-    - Database Integration**: Integrated a MongoDB database for storing user information and preferences. This facilitated personalized experiences for registered users, like saving favorite cities.
+    - Database Integration: Integrated a MongoDB database for storing user information and preferences. This facilitated personalized experiences for registered users, like saving favorite cities.
 
 - Frontend Development (JavaFX)
 
-    - Interface Design**: Designed an intuitive and engaging user interface using JavaFX. This included input fields for city selection, buttons for unit conversion, and a language switcher.
+    - Interface Design: Designed an intuitive and engaging user interface using JavaFX. This included input fields for city selection, buttons for unit conversion, and a language switcher.
 
-    - Dynamic Content Rendering**: Implemented functionality to render weather data dynamically from the backend. This includes displaying temperature, weather icons, and other relevant information.
+    - Dynamic Content Rendering: Implemented functionality to render weather data dynamically from the backend. This includes displaying temperature, weather icons, and other relevant information.
 
-    - Interaction with Backend**: Established HTTP communication between the front and backend. The front end sends requests (like city names for weather data) to the backend and displays the received data.
+    - Interaction with Backend: Established HTTP communication between the front and backend. The front end sends requests (like city names for weather data) to the backend and displays the received data.
 
-    - User Interaction Features**: Added features for user interaction, such as the ability to switch between Celsius and Fahrenheit, change the application language, and view weather details of different cities.
+    - User Interaction Features: Added features for user interaction, such as the ability to switch between Celsius and Fahrenheit, change the application language, and view weather details of different cities.
 
-    - User Authentication Integration**: Integrated login and registration functionalities, allowing users to create accounts, log in, and view personalized weather data.
+    - User Authentication Integration: Integrated login and registration functionalities, allowing users to create accounts, log in, and view personalized weather data.
 
 ## Steps to run your code
 
