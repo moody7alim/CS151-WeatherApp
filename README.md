@@ -210,8 +210,15 @@ First, run the Spring Boot Backend - SpringApiApplication.java
 Second, run the JavaFX Frontend - HelloApplication.java
 
 ## Snapshot of the running program
-<img width="1470" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/b6bf1b07-ddb0-4240-b089-525215f06568">
+
+- Spring Boot Backend
+<img width="1470" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/70b0b944-9f64-44c0-b395-1d214d8afc36">
+
+- JavaFX Frontend
 <img width="1470" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/d05549fc-323f-4342-8db2-cf164bbc34d4">
+<img width="303" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/b98f148b-9945-45b1-98db-7d73170c073f">
+<img width="602" alt="image" src="https://github.com/moody7alim/CS151-WeatherApp/assets/79944868/47775077-55aa-49b6-86eb-1c9a933c9ff8">
+
 
 ### References
 - [AccuWeather](https://www.accuweather.com/)
